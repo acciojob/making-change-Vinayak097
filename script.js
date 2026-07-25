@@ -1,4 +1,41 @@
 const makeChange = (c) => {
+	penny=1;
+	nickel=5;
+	Dime=10;
+	quarter=25;
+	let obj = {
+		q:0,
+		n:0,
+		d:0,
+		p:0
+	}
+	
+	while(c>0){
+		if(n>=q){
+			let r = Math.foor(n/quarter);
+			n=n%quarter;
+			obj.q=r
+		}
+		if(n>=Dime){
+			let r=Math.floor(n/Dime);
+			n=n%Dime;
+			obj.d=r;
+		}
+		if(n>=nickel){
+			let r = Math.floor(n/nickel)
+			n=n%nickel;
+			obj.n=r;
+		}
+		if(n>=penny){
+			let r = Math.floor(n/penny);
+			n=n%penny;
+			obj.p=r;
+		}
+	}
+	return obj
+	
+	
+	
   // your name here
 };
 
