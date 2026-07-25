@@ -11,8 +11,8 @@ const makeChange = (c) => {
 	}
 	let n=c;
 	while(n>0){
-		if(n>=q){
-			let r = Math.foor(n/quarter);
+		if(n>=quarter){
+			let r = Math.floor(n/quarter);
 			n=n%quarter;
 			obj.q=r
 		}
