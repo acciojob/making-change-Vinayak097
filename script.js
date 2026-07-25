@@ -9,8 +9,8 @@ const makeChange = (c) => {
 		d:0,
 		p:0
 	}
-	
-	while(c>0){
+	let n=c;
+	while(n>0){
 		if(n>=q){
 			let r = Math.foor(n/quarter);
 			n=n%quarter;
@@ -34,7 +34,7 @@ const makeChange = (c) => {
 	}
 	return obj
 	
-	
+	 
 	
   // your name here
 };
